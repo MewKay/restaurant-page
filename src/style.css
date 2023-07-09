@@ -47,6 +47,13 @@ header {
   padding: .7em 2.5em;
 }
 
+.presentation {
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 /* -- Style -- */
 
 /* --- Homepage --- */
@@ -87,4 +94,16 @@ header {
 
 .btn-contact {
   background-color: var(--secondary);
+}
+
+.homepage-title {
+  font-family: var(--font-title);
+  font-size: 3.5rem;
+  letter-spacing: -3px;
+  max-width: 600px;
+}
+
+.description {
+  font-size: 1.5rem;
+  max-width: 70ch;
 }
