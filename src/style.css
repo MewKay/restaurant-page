@@ -13,6 +13,7 @@
 body {
   height: 100vh;
   font-family: var(--font-text);
+  color: var(--text);
 }
 
 #content {
@@ -47,6 +48,7 @@ header {
   font-family: var(--font-text);
   font-size: 1.2rem;
   font-weight: bold;
+  color: var(--text);
   border: none;
   border-radius: 15px;
 }
