@@ -32,18 +32,25 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 2rem 5rem;
 }
 
+.btn-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
 /* -- Style -- */
+
+/* --- Homepage --- */
 
 #home {
   background-image: url(./homepage-background.jpg);
   height: 100%;
   background-size: cover;
 }
-
-/* --- Homepage --- */
 
 header {
   background-color: var(--background);
