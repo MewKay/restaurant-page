@@ -3,6 +3,7 @@ const Homepage = () => {
   homeContainer.id = "home";
 
   homeContainer.appendChild(Header());
+  homeContainer.appendChild(Presentation());
   
   return homeContainer;
 }
@@ -35,6 +36,30 @@ const Header = () => {
   addButtonsSection();
 
   return headerContainer;
+}
+
+const Presentation = () => {
+  const presentationContainer = document.createElement("div");
+  presentationContainer.classList.add("presentation");
+  
+  const addHomeTitle = () => {
+    const homeTitle = document.createElement("h1");
+    homeTitle.classList.add("homepage-title");
+    homeTitle.innerText = "Welcome to our pizzeria, where each slice is a delicious journey of flavors!";
+    presentationContainer.appendChild(homeTitle);
+  }
+
+  const addHomeDescription = () => {
+    const homeDescription = document.createElement("p");
+    homeDescription.classList.add("description");
+    homeDescription.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo itaque aut ipsam. Ab quo architecto neque illum voluptatibus, porro voluptas harum possimus ipsa. Hic magnam eius accusantium fugit? Quae, laudantium?";
+    presentationContainer.appendChild(homeDescription);
+  }
+
+  addHomeTitle();
+  addHomeDescription();
+
+  return presentationContainer;
 }
 
 export {
