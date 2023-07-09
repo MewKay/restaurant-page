@@ -48,9 +48,11 @@ header {
 }
 
 .presentation {
+  flex: auto;
   padding: 0 5rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -72,6 +74,7 @@ header {
   background-image: url(./homepage-background.jpg);
   height: 100%;
   background-size: cover;
+  background-position: center;
 }
 
 header {
@@ -106,6 +109,17 @@ header {
   background-color: var(--secondary);
 }
 
+.presentation,
+.credits > p,
+.credits > p > a {
+  color: var(--background);
+}
+
+.presentation,
+.credits {
+  background-color: rgba(0,0,0,0.5);
+}
+
 .homepage-title {
   font-family: var(--font-title);
   font-size: 3.5rem;
@@ -120,9 +134,4 @@ header {
 
 .credits {
   font-size: .95rem;
-}
-
-.credits > p,
-a {
-color: var(--text);
 }
