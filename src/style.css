@@ -1,0 +1,25 @@
+:root {
+  --text: #080101;
+  --background: #faf5f4;
+  --primary: #F44336;
+  --secondary: #efeea9;
+  --accent: #ddda46;
+}
+
+body {
+  height: 100vh;
+}
+
+#content {
+  height: 100%;
+}
+
+* {
+  color: var(--text);
+}
+
+#home {
+  background-image: url(./homepage-background.jpg);
+  height: 100%;
+  background-size: cover;
+}
