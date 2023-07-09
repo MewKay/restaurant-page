@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
 :root {
+  --font-title:  "Belanosima", sans-serif;
+  --font-text: "PT Sans", sans-serif;
   --text: #080101;
   --background: #faf5f4;
   --primary: #F44336;
@@ -11,6 +12,7 @@
 
 body {
   height: 100vh;
+  font-family: var(--font-text);
 }
 
 #content {
@@ -35,14 +37,21 @@ header {
 
 /* -- Style -- */
 
+#home {
+  background-image: url(./homepage-background.jpg);
+  height: 100%;
+  background-size: cover;
+}
+
 /* --- Homepage --- */
 
 header {
   background-color: var(--background);
 }
 
-#home {
-  background-image: url(./homepage-background.jpg);
-  height: 100%;
-  background-size: cover;
+.brand-name {
+  font-family: var(--font-title);
+  font-size: 3rem;
+  letter-spacing: -2px;
 }
+
