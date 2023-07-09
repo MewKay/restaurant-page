@@ -54,6 +54,16 @@ header {
   gap: 2rem;
 }
 
+.credits {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.credits > p {
+  margin-bottom: .5rem;
+  margin-right: 1rem;
+}
+
 /* -- Style -- */
 
 /* --- Homepage --- */
@@ -106,4 +116,13 @@ header {
 .description {
   font-size: 1.5rem;
   max-width: 70ch;
+}
+
+.credits {
+  font-size: .95rem;
+}
+
+.credits > p,
+a {
+color: var(--text);
 }
