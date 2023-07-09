@@ -14,8 +14,28 @@ body {
   height: 100%;
 }
 
-* {
-  color: var(--text);
+/* -- Layout -- */
+
+/* --- Homepage --- */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+}
+
+/* -- Style -- */
+
+/* --- Homepage --- */
+
+header {
+  background-color: var(--background);
 }
 
 #home {
