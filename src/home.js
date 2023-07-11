@@ -1,10 +1,12 @@
-import { Header } from "./header.js";
+import { createHeader } from "./header.js";
 
 const Homepage = () => {
   const homeContainer = document.createElement("div");
   homeContainer.id = "home";
 
-  homeContainer.appendChild(Header());
+  const homeHeader = createHeader();
+
+  homeContainer.appendChild(homeHeader.get());
   homeContainer.appendChild(Presentation());
   homeContainer.appendChild(Credits());
 
