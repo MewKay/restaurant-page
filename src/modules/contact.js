@@ -1,6 +1,6 @@
-import { createHeader } from "./header";
-import { addHomeButton } from "./homeButton";
-import { addMenuButton } from "./menuButton";
+import { createHeader } from "./header/header";
+import { addHomeButton } from "./header/buttons/homeButton";
+import { addMenuButton } from "./header/buttons/menuButton";
 
 const ContactPage = () => {
   const contactContainer = document.createElement("div");

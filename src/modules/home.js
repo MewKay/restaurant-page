@@ -1,6 +1,6 @@
-import { createHeader } from "./header.js";
-import { addMenuButton } from "./menuButton.js";
-import { addContactButton } from "./contactButton.js";
+import { createHeader } from "./header/header.js";
+import { addMenuButton } from "./header/buttons/menuButton.js";
+import { addContactButton } from "./header/buttons/contactButton.js";
 
 const Homepage = () => {
   const homeContainer = document.createElement("div");

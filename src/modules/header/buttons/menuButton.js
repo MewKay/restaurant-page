@@ -1,4 +1,4 @@
-import { MenuPage } from "./menu";
+import { MenuPage } from "../../menu";
 
 const createMenuButton = () => {
   const menuButton = document.createElement("button");

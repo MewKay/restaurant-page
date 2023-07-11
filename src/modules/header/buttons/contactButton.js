@@ -1,4 +1,4 @@
-import { ContactPage } from "./contact.js";
+import { ContactPage } from "../../contact";
 
 const createContactButton = () => {
   const contactButton = document.createElement("button");

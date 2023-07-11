@@ -1,4 +1,4 @@
-import { Homepage } from "./home";
+import { Homepage } from "../../home";
 
 const createHomeButton = () => {
   const homeButton = document.createElement("button");

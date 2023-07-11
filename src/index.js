@@ -1,5 +1,5 @@
-import "./reset.css";
-import "./style.css";
-import { displayHomePage } from "./homeButton";
+import "./styles/reset.css";
+import "./styles/style.css";
+import { displayHomePage } from "./modules/header/buttons/homeButton";
 
 displayHomePage();

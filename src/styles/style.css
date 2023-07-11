@@ -113,7 +113,7 @@ header {
 /* --- Homepage --- */
 
 #home {
-  background-image: url(./homepage-background.jpg);
+  background-image: url(../images/homepage-background.jpg);
   height: 100%;
   background-size: cover;
   background-position: center;
