@@ -20,8 +20,11 @@ const createHeader = () => {
 
   const get = () => headerContainer;
 
+  const getSectionButton = () => sectionButton;
+
   return {
-    get
+    get,
+    getSectionButton
   };
 }
 
