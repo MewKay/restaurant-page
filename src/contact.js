@@ -1,4 +1,5 @@
 import { createHeader } from "./header";
+import { addHomeButton } from "./homeButton";
 import { addMenuButton } from "./menuButton";
 
 const ContactPage = () => {
@@ -15,6 +16,7 @@ const ContactPage = () => {
 const createContactHeader = () => {
   const contactHeader = createHeader();
 
+  addHomeButton(contactHeader);
   addMenuButton(contactHeader);
 
   return contactHeader;

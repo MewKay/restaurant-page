@@ -109,6 +109,10 @@ header {
   background-color: var(--secondary);
 }
 
+.btn-home {
+  background-color: var(--accent);
+}
+
 .presentation,
 .credits > p,
 .credits > p > a {
