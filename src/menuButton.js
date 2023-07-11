@@ -7,7 +7,7 @@ const createMenuButton = () => {
 
 const addMenuButton = (headerContainer) => {
   headerContainer.getSectionButton().appendChild(createMenuButton());
-  return container;
+  return headerContainer;
 }
 
 export {

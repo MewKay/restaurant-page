@@ -14,9 +14,9 @@ const addSectionButton = (container) => {
 
 const createHeader = () => {
   const headerContainer = document.createElement("header");
-  const sectionButton = addSectionButton(headerContainer);
-
   addBrandName(headerContainer);
+
+  const sectionButton = addSectionButton(headerContainer);
 
   const get = () => headerContainer;
 

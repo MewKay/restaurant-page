@@ -1,16 +1,25 @@
 import { createHeader } from "./header.js";
+import { addMenuButton } from "./menuButton.js";
 
 const Homepage = () => {
   const homeContainer = document.createElement("div");
   homeContainer.id = "home";
 
-  const homeHeader = createHeader();
+  const homeHeader = createHomeHeader();
 
   homeContainer.appendChild(homeHeader.get());
   homeContainer.appendChild(Presentation());
   homeContainer.appendChild(Credits());
 
   return homeContainer;
+}
+
+const createHomeHeader = () => {
+  const homeHeader = createHeader();
+
+  addMenuButton(homeHeader);
+
+  return homeHeader;
 }
 
 const Presentation = () => {
