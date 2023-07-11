@@ -5,8 +5,8 @@ const createMenuButton = () => {
   return menuButton;
 }
 
-const addMenuButton = (container) => {
-  container.sectionButton.appendChild(createMenuButton());
+const addMenuButton = (headerContainer) => {
+  headerContainer.getSectionButton().appendChild(createMenuButton());
   return container;
 }
 
