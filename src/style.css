@@ -22,13 +22,7 @@ body {
 
 /* -- Layout -- */
 
-/* --- Homepage --- */
-
-#home {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+/* --- Header --- */
 
 header {
   display: flex;
@@ -45,6 +39,15 @@ header {
 
 .btn-section > button {
   padding: .7em 2.5em;
+}
+
+
+/* --- Homepage --- */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .presentation {
@@ -68,14 +71,7 @@ header {
 
 /* -- Style -- */
 
-/* --- Homepage --- */
-
-#home {
-  background-image: url(./homepage-background.jpg);
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-}
+/* --- Header --- */
 
 header {
   background-color: var(--background);
@@ -111,6 +107,16 @@ header {
 
 .btn-home {
   background-color: var(--accent);
+}
+
+
+/* --- Homepage --- */
+
+#home {
+  background-image: url(./homepage-background.jpg);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .presentation,
