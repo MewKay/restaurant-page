@@ -5,25 +5,18 @@ const addBrandName = (container) => {
   container.appendChild(brandName);
 }
 
-const addButtonsSection = (container) => {
-  const buttonsSection = document.createElement("div");
-  buttonsSection.classList.add("btn-section");
-  const menuButton = document.createElement("button");
-  const contactButton = document.createElement("button");
-  menuButton.classList.add("btn-menu");
-  menuButton.innerText = "Menu";
-  buttonsSection.appendChild(menuButton);
-  contactButton.classList.add("btn-contact");
-  contactButton.innerText = "Contact";
-  buttonsSection.appendChild(contactButton);
-  container.appendChild(buttonsSection);
+const addSectionButton = (container) => {
+  const sectionButton = document.createElement("div");
+  sectionButton.classList.add("btn-section");
+  container.appendChild(container);
+  return sectionButton;
 }
 
 const createHeader = () => {
   const headerContainer = document.createElement("header");
+  const sectionButton = addSectionButton(headerContainer);
 
   addBrandName(headerContainer);
-  addButtonsSection(headerContainer);
 
   const get = () => headerContainer;
 
