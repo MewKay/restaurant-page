@@ -20,5 +20,6 @@ const displayHomePage = () => {
 }
 
 export {
-  addHomeButton
+  addHomeButton,
+  displayHomePage
 };
