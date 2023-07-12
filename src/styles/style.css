@@ -48,6 +48,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 
 .presentation {
@@ -67,6 +68,14 @@ header {
 .credits > p {
   margin-bottom: .5rem;
   margin-right: 1rem;
+}
+
+/* --- Menu --- */
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 /* -- Style -- */
@@ -114,7 +123,6 @@ header {
 
 #home {
   background-image: url(../images/homepage-background.jpg);
-  height: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -144,4 +152,10 @@ header {
 
 .credits {
   font-size: .95rem;
+}
+
+/* --- Menu --- */
+
+#menu {
+  background-color: var(--background);
 }
