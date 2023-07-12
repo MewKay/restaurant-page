@@ -83,6 +83,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3rem 0;
+}
+
+#menu-list {
+  height: 100%;
+  width: 70rem;
 }
 
 /* -- Style -- */
@@ -165,4 +171,32 @@ header {
 
 #menu {
   background-color: var(--background);
+}
+
+#menu-list {
+  background-color: blue;
+}
+
+.menu-item #i-0 {
+  background-image: url(../images/margherita.jpg);
+}
+
+.menu-item #i-1 {
+  background-image: url(../images/vegetarian.jpg);
+}
+
+.menu-item #i-2 {
+  background-image: url(../images/hawaiian.jpg);
+}
+
+.menu-item #i-3 {
+  background-image: url(../images/sicilian.jpg);
+}
+
+.menu-item #i-4 {
+  background-image: url(../images/four-cheese.jpg);
+}
+
+.menu-item #i-5 {
+  background-image: url(../images/pepperoni.jpg);
 }
