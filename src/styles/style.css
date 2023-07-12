@@ -76,6 +76,7 @@ header {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow: auto;
 }
 
 #menu-list-container {
@@ -88,7 +89,7 @@ header {
 
 #menu-list {
   height: 100%;
-  width: 70rem;
+  width: 60rem;
   display: grid;
   grid: 
     "item-0 item-0 item-1" 300px
