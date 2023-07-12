@@ -45,15 +45,26 @@ const createMenuList = () => {
 const addMenuItemsToList = (container) => {
   for (let i=0; i<6; i++) {
     const menuItem = createMenuItem(i);
-    container.appendChild(menuItem);
+    container.appendChild(menuItem.getNode());
   }
 }
 
 const createMenuItem = (index) => {
-  const menuItem = document.createElement("div");
-  menuItem.classList.add("menu-item");
-  menuItem.id = `i-${index}`;
-  return menuItem;
+
+  const createMenuItemContainer = (index) => {
+    const menuItemContainer = document.createElement("div");
+    menuItemContainer.classList.add("menu-item");
+    menuItemContainer.id = `i-${index}`;
+    return menuItemContainer;
+  }
+
+  const menuItemContainer = createMenuItemContainer(index);
+  
+  const getNode = () => menuItemContainer;
+
+  return {
+    getNode
+  };
 }
 
 export {
