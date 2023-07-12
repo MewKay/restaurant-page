@@ -78,6 +78,13 @@ header {
   height: 100%;
 }
 
+#menu-list-container {
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* -- Style -- */
 
 /* --- Header --- */
