@@ -92,10 +92,11 @@ header {
   width: 60rem;
   display: grid;
   grid: 
-    "item-0 item-0 item-1" 300px
-    "item-2 item-3 item-3" 300px
-    "item-4 item-4 item-5" 300px /
+    "item-0 item-0 item-1" 350px
+    "item-2 item-3 item-3" 350px
+    "item-4 item-4 item-5" 350px /
     1fr 1fr 1fr;
+    gap: 1rem;
 }
 
 .menu-item#i-0 {
@@ -202,6 +203,10 @@ header {
 
 #menu {
   background-color: var(--background);
+}
+
+.menu-item {
+  border-radius: 10px;
 }
 
 .menu-item#i-0 {
