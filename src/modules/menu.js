@@ -37,7 +37,18 @@ const createMenuList = () => {
   const menuList = document.createElement("div");
   menuList.id = "menu-list";
 
+  addMenuItemsToList(menuList);
+  
   return menuList;
+}
+
+const addMenuItemsToList = (container) => {
+  for (let i=0; i<6; i++) {
+    const menuItem = document.createElement("div");
+    menuItem.classList.add("menu-item");
+    menuItem.id = `i-${i}`;
+    container.appendChild(menuItem);
+  }
 }
 
 export {
