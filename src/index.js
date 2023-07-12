@@ -1,5 +1,5 @@
 import "./styles/reset.css";
 import "./styles/style.css";
-import { displayHomePage } from "./modules/header/buttons/homeButton";
+import { displayMenuPage } from "./modules/header/buttons/menuButton";
 
-displayHomePage();
+displayMenuPage();

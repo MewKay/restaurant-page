@@ -20,5 +20,6 @@ const displayMenuPage = (event) => {
 }
 
 export {
-  addMenuButton
+  addMenuButton,
+  displayMenuPage
 };
