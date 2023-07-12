@@ -7,8 +7,10 @@ const MenuPage = () => {
   menuContainer.id = "menu";
 
   const menuHeader = createMenuHeader(); 
+  const menuListContainer = createMenuListContainer();
 
   menuContainer.appendChild(menuHeader.get());
+  menuContainer.appendChild(menuListContainer);
   
   return menuContainer;
 }
@@ -20,6 +22,22 @@ const createMenuHeader = () => {
   addContactButton(menuHeader);
 
   return menuHeader;
+}
+
+const createMenuListContainer = () => {
+  const menuListContainer = document.createElement("div");
+  menuListContainer.id = "menu-container";
+  const menuList = createMenuList();
+  menuListContainer.appendChild(menuList);
+
+  return menuListContainer;
+}
+
+const createMenuList = () => {
+  const menuList = document.createElement("div");
+  menuList.id = "menu-list";
+
+  return menuList;
 }
 
 export {
