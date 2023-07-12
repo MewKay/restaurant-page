@@ -89,6 +89,36 @@ header {
 #menu-list {
   height: 100%;
   width: 70rem;
+  display: grid;
+  grid: 
+    "item-0 item-0 item-1" 300px
+    "item-2 item-3 item-3" 300px
+    "item-4 item-4 item-5" 300px /
+    1fr 1fr 1fr;
+}
+
+.menu-item#i-0 {
+  grid-area: item-0;
+}
+
+.menu-item#i-1 {
+  grid-area: item-1;
+}
+
+.menu-item#i-2 {
+  grid-area: item-2;
+}
+
+.menu-item#i-3 {
+  grid-area: item-3;
+}
+
+.menu-item#i-4 {
+  grid-area: item-4;
+}
+
+.menu-item#i-5 {
+  grid-area: item-5;
 }
 
 /* -- Style -- */
@@ -173,30 +203,38 @@ header {
   background-color: var(--background);
 }
 
-#menu-list {
-  background-color: blue;
-}
-
-.menu-item #i-0 {
-  background-image: url(../images/margherita.jpg);
-}
-
-.menu-item #i-1 {
+.menu-item#i-0 {
   background-image: url(../images/vegetarian.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-.menu-item #i-2 {
-  background-image: url(../images/hawaiian.jpg);
+.menu-item#i-1 {
+  background-image: url(../images/margherita.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-.menu-item #i-3 {
+.menu-item#i-2 {
   background-image: url(../images/sicilian.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-.menu-item #i-4 {
-  background-image: url(../images/four-cheese.jpg);
+.menu-item#i-3 {
+  background-image: url(../images/hawaiian.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-.menu-item #i-5 {
+.menu-item#i-4 {
   background-image: url(../images/pepperoni.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-item#i-5 {
+  background-image: url(../images/four-cheese.jpg);
+  background-size: cover;
+  background-position: center;
 }
