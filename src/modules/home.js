@@ -1,19 +1,32 @@
-import { createHeader } from "./header.js";
+import { createHeader } from "./header/header.js";
+import { addMenuButton } from "./header/buttons/menuButton.js";
+import { addContactButton } from "./header/buttons/contactButton.js";
 
 const Homepage = () => {
   const homeContainer = document.createElement("div");
   homeContainer.id = "home";
 
-  const homeHeader = createHeader();
+  const homeHeader = createHomeHeader();
+  const presentation = createPresentation();
+  const credits = createCredits();
 
   homeContainer.appendChild(homeHeader.get());
-  homeContainer.appendChild(Presentation());
-  homeContainer.appendChild(Credits());
+  homeContainer.appendChild(presentation);
+  homeContainer.appendChild(credits);
 
   return homeContainer;
 }
 
-const Presentation = () => {
+const createHomeHeader = () => {
+  const homeHeader = createHeader();
+
+  addMenuButton(homeHeader);
+  addContactButton(homeHeader);
+
+  return homeHeader;
+}
+
+const createPresentation = () => {
   const presentationContainer = document.createElement("div");
   presentationContainer.classList.add("presentation");
   
@@ -37,7 +50,7 @@ const Presentation = () => {
   return presentationContainer;
 }
 
-const Credits = () => {
+const createCredits = () => {
   const creditsContainer = document.createElement("div");
   creditsContainer.classList.add("credits");
 

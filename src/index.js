@@ -1,12 +1,5 @@
-import "./reset.css";
-import "./style.css";
-import { Homepage } from "./home.js";
-import { MenuPage } from "./menu";
+import "./styles/reset.css";
+import "./styles/style.css";
+import { displayHomePage } from "./modules/header/buttons/homeButton";
 
-const displayPage = () => {
-  const container = document.querySelector("#content");
-
-  container.appendChild(Homepage());
-}
-
-displayPage();
+displayHomePage();

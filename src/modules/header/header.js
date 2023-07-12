@@ -8,15 +8,15 @@ const addBrandName = (container) => {
 const addSectionButton = (container) => {
   const sectionButton = document.createElement("div");
   sectionButton.classList.add("btn-section");
-  container.appendChild(container);
+  container.appendChild(sectionButton);
   return sectionButton;
 }
 
 const createHeader = () => {
   const headerContainer = document.createElement("header");
-  const sectionButton = addSectionButton(headerContainer);
-
   addBrandName(headerContainer);
+
+  const sectionButton = addSectionButton(headerContainer);
 
   const get = () => headerContainer;
 
