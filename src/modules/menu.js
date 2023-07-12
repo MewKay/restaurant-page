@@ -38,17 +38,22 @@ const createMenuList = () => {
   menuList.id = "menu-list";
 
   addMenuItemsToList(menuList);
-  
+
   return menuList;
 }
 
 const addMenuItemsToList = (container) => {
   for (let i=0; i<6; i++) {
-    const menuItem = document.createElement("div");
-    menuItem.classList.add("menu-item");
-    menuItem.id = `i-${i}`;
+    const menuItem = createMenuItem(i);
     container.appendChild(menuItem);
   }
+}
+
+const createMenuItem = (index) => {
+  const menuItem = document.createElement("div");
+  menuItem.classList.add("menu-item");
+  menuItem.id = `i-${index}`;
+  return menuItem;
 }
 
 export {
