@@ -66,11 +66,26 @@ const createMenuItem = (index) => {
     menuItemContainer.appendChild(itemNameTitle);
   }
 
+  const addItemImageCredit = (author,website,link) => {
+    const creditText = document.createElement("p");
+    const photoLink = document.createElement("a");
+    const websiteText = document.createTextNode(` on ${website}`);
+
+    creditText.innerText = "Photo by ";
+    photoLink.href = link;
+    photoLink.innerText = author;
+    creditText.appendChild(photoLink);
+    creditText.appendChild(websiteText);
+
+    menuItemContainer.appendChild(creditText);
+  }
+
   const getNode = () => menuItemContainer;
 
   return {
     getNode,
-    addItemName
+    addItemName,
+    addItemImageCredit
   };
 }
 
