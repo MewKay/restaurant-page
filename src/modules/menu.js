@@ -60,10 +60,17 @@ const createMenuItem = (index) => {
 
   const menuItemContainer = createMenuItemContainer(index);
   
+  const addItemName = (itemName) => {
+    const itemNameTitle = document.createElement("h3");
+    itemNameTitle.innerText = itemName;
+    menuItemContainer.appendChild(itemNameTitle);
+  }
+
   const getNode = () => menuItemContainer;
 
   return {
-    getNode
+    getNode,
+    addItemName
   };
 }
 
