@@ -26,7 +26,7 @@ const createMenuHeader = () => {
 
 const createMenuListContainer = () => {
   const menuListContainer = document.createElement("div");
-  menuListContainer.id = "menu-container";
+  menuListContainer.id = "menu-list-container";
   const menuList = createMenuList();
   menuListContainer.appendChild(menuList);
 
