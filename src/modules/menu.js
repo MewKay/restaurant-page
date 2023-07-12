@@ -102,6 +102,7 @@ const createMenuItem = (index) => {
   const addItemName = (itemName) => {
     const itemNameTitle = document.createElement("h3");
     itemNameTitle.innerText = itemName;
+    itemNameTitle.classList.add("item-title");
     menuItemContainer.appendChild(itemNameTitle);
   }
 

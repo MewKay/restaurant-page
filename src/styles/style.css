@@ -99,6 +99,17 @@ header {
     gap: 1rem;
 }
 
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.menu-item > p {
+  align-self: flex-end;
+}
+
 .menu-item#i-0 {
   grid-area: item-0;
 }
@@ -207,40 +218,48 @@ header {
 
 .menu-item {
   border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.item-title,
+.menu-item > p,
+.menu-item > p > a {
+  color: var(--background);
+}
+
+.item-title{
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  margin-top: .5rem;
+  margin-left: .5rem;
+}
+
+.menu-item {
+  font-family: var(--font-text);
+  font-size: .8rem;
 }
 
 .menu-item#i-0 {
   background-image: url(../images/vegetarian.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .menu-item#i-1 {
   background-image: url(../images/margherita.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .menu-item#i-2 {
   background-image: url(../images/sicilian.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .menu-item#i-3 {
   background-image: url(../images/hawaiian.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .menu-item#i-4 {
   background-image: url(../images/pepperoni.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .menu-item#i-5 {
   background-image: url(../images/four-cheese.jpg);
-  background-size: cover;
-  background-position: center;
 }
