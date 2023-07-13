@@ -101,12 +101,17 @@ header {
 
 .menu-item {
   display: flex;
+}
+
+.informations {
+  flex: auto;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem 1rem;
 }
 
-.menu-item > p {
+.informations > p {
   align-self: flex-end;
 }
 
@@ -223,8 +228,8 @@ header {
 }
 
 .item-title,
-.menu-item > p,
-.menu-item > p > a {
+.informations > p,
+.informations > p > a {
   color: var(--background);
 }
 
