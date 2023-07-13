@@ -236,6 +236,8 @@ header {
 .informations {
   background-color: rgba(0,0,0,0.5);
   border-radius: 10px;
+  opacity: 0;
+  transition: opacity .5s;
 }
 
 .item-title {

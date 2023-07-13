@@ -129,6 +129,18 @@ const createMenuItem = (index) => {
     itemInfoContainer.appendChild(creditText);
   }
 
+  const showInfos = () => {
+    itemInfoContainer.style.opacity = "1";
+  }
+
+  const hideInfos = () => {
+    itemInfoContainer.style.opacity = "0";
+  }
+  
+  itemInfoContainer.addEventListener("mouseover", showInfos);
+
+  itemInfoContainer.addEventListener("mouseout", hideInfos);
+
   const getNode = () => menuItemContainer;
 
   return {
