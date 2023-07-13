@@ -7,8 +7,10 @@ const ContactPage = () => {
   contactContainer.id = "contact";
 
   const contactHeader = createContactHeader(); 
+  const contactInfos = createContactInfos();
 
   contactContainer.appendChild(contactHeader.get());
+  contactContainer.appendChild(contactInfos);
   
   return contactContainer;
 }
@@ -20,6 +22,13 @@ const createContactHeader = () => {
   addMenuButton(contactHeader);
 
   return contactHeader;
+}
+
+const createContactInfos = () => {
+  const contactInfosContainer = document.createElement("div");
+  contactInfosContainer.id = "contact-infos";
+
+  return contactInfosContainer;
 }
 
 export {

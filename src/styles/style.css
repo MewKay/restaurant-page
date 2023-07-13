@@ -139,6 +139,13 @@ header {
   grid-area: item-5;
 }
 
+/* --- Contact --- */
+
+#contact {
+  height: 100%;
+  
+}
+
 /* -- Style -- */
 
 /* --- Header --- */
@@ -274,4 +281,10 @@ header {
 
 .menu-item#i-5 {
   background-image: url(../images/four-cheese.jpg);
+}
+
+/* --- Contact --- */
+
+#contact {
+  background-color: var(--background);
 }
