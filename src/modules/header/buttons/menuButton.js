@@ -1,4 +1,4 @@
-import { MenuPage } from "../../menu";
+import { displayMenuPage } from "../../displayer";
 
 const createMenuButton = () => {
   const menuButton = document.createElement("button");
@@ -13,13 +13,6 @@ const addMenuButton = (headerContainer) => {
   return headerContainer;
 }
 
-const displayMenuPage = (event) => {
-  const mainContainer = document.querySelector("#content");
-  mainContainer.innerText = "";
-  mainContainer.appendChild(MenuPage());
-}
-
 export {
-  addMenuButton,
-  displayMenuPage
+  addMenuButton
 };

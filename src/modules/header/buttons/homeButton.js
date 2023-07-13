@@ -1,4 +1,4 @@
-import { Homepage } from "../../home";
+import { displayHomePage } from "../../displayer";
 
 const createHomeButton = () => {
   const homeButton = document.createElement("button");
@@ -13,13 +13,6 @@ const addHomeButton = (headerContainer) => {
   return headerContainer;
 }
 
-const displayHomePage = () => {
-  const mainContainer = document.querySelector("#content");
-  mainContainer.innerText = "";
-  mainContainer.appendChild(Homepage());
-}
-
 export {
-  addHomeButton,
-  displayHomePage
+  addHomeButton
 };

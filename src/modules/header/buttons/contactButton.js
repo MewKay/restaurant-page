@@ -1,4 +1,4 @@
-import { ContactPage } from "../../contact";
+import { displayContactPage } from "../../displayer";
 
 const createContactButton = () => {
   const contactButton = document.createElement("button");
@@ -11,12 +11,6 @@ const createContactButton = () => {
 const addContactButton = (headerContainer) => {
   headerContainer.getSectionButton().appendChild(createContactButton());
   return headerContainer;
-}
-
-const displayContactPage = () => {
-  const mainContainer = document.querySelector("#content");
-  mainContainer.innerText = "";
-  mainContainer.appendChild(ContactPage());
 }
 
 export {
