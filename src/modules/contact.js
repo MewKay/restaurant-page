@@ -7,10 +7,10 @@ const ContactPage = () => {
   contactContainer.id = "contact";
 
   const contactHeader = createContactHeader(); 
-  const contactInfos = createContactInfos();
+  const contactContent = createContactContent();
 
   contactContainer.appendChild(contactHeader.get());
-  contactContainer.appendChild(contactInfos);
+  contactContainer.appendChild(contactContent);
   
   return contactContainer;
 }
@@ -24,11 +24,11 @@ const createContactHeader = () => {
   return contactHeader;
 }
 
-const createContactInfos = () => {
-  const contactInfosContainer = document.createElement("div");
-  contactInfosContainer.id = "contact-infos";
+const createContactContent = () => {
+  const contactContent = document.createElement("div");
+  contactContent.id = "contact-content";
 
-  return contactInfosContainer;
+  return contactContent;
 }
 
 export {
