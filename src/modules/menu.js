@@ -99,11 +99,20 @@ const createMenuItem = (index) => {
 
   const menuItemContainer = createMenuItemContainer(index);
   
+  const createItemInfoContainer = () => {
+    const informationContainer = document.createElement("div");
+    informationContainer.classList.add("informations");
+    menuItemContainer.appendChild(informationContainer);
+    return informationContainer;
+  }
+
+  const itemInfoContainer = createItemInfoContainer();
+
   const addItemName = (itemName) => {
     const itemNameTitle = document.createElement("h3");
     itemNameTitle.innerText = itemName;
     itemNameTitle.classList.add("item-title");
-    menuItemContainer.appendChild(itemNameTitle);
+    itemInfoContainer.appendChild(itemNameTitle);
   }
 
   const addItemImageCredit = (author,website,link) => {
@@ -117,7 +126,7 @@ const createMenuItem = (index) => {
     creditText.appendChild(photoLink);
     creditText.appendChild(websiteText);
 
-    menuItemContainer.appendChild(creditText);
+    itemInfoContainer.appendChild(creditText);
   }
 
   const getNode = () => menuItemContainer;
