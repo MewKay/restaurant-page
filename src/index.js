@@ -1,5 +1,5 @@
 import "./styles/reset.css";
 import "./styles/style.css";
-import { displayContactPage } from "./modules/displayer";
+import { displayHomePage } from "./modules/displayer";
 
-displayContactPage();
+displayHomePage();
